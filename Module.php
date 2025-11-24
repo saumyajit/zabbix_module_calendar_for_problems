@@ -1,25 +1,17 @@
 <?php
 namespace Modules\problemcal;
 
-use Zabbix;
+use Zabbix\Core\CModule;
 use APP;
 use CMenuItem;
 
-/**
- * Incident Calendar Module
- */
-class Module extends CModule
-{
-    public function init(): void
-    {
-        // Add Incident Calendar item to the main menu, under "Reports".
-        APP\Component::get('menu.main')
-            ->findOrAdd('reports')
-            ->getSubmenu()
-            ->insertAfter(
-                'notifications',
-                new CMenuItem('Incident Calendar')
-                    ->setAction('incident.calendar')
-            );
+class Module extends CModule {
+    public function init(): void {
+        APP::Component()->get('menu.main')
+            ->findOrAdd(_('Reports'))
+                ->getSubmenu()
+                    ->insertAfter(_('Notification'),
+                        (new CMenuItem(_('Incident Calendar')))->setAction('incident.calendar')
+                    );
     }
 }
