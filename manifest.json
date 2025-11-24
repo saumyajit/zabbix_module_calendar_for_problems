@@ -9,7 +9,7 @@
     "description": "View Events in a Calendar View",
     "actions": {
         "incident.calendar": {
-            "class": "ProblemCalendar",
+            "class": "EventCalendar",
             "view": "event"
         }
     }
