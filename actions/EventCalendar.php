@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\problemcal\Actions;
+namespace Modules\eventcal\Actions;
 
 use CController;
 use CControllerResponseData;
