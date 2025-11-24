@@ -1,16 +1,16 @@
 {
     "manifest_version": 2.0,
-    "id": "problem-calendar",
-    "name": "Calendar for Problem Event",
+    "id": "event-calendar",
+    "name": "Calendar for All Events",
     "version": "1.0",
     "author": "Saumyajit Pramanik",
-    "namespace": "problemcal",
+    "namespace": "eventcal",
     "url": "https://www.zabbix.com/",
-    "description": "View Problemss in a Calendar View",
+    "description": "View Events in a Calendar View",
     "actions": {
         "incident.calendar": {
             "class": "ProblemCalendar",
-            "view": "maintenance"
+            "view": "event"
         }
     }
 }
