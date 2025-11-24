@@ -9,7 +9,7 @@
     "description": "View Problemss in a Calendar View",
     "actions": {
         "incident.calendar": {
-            "class": "MaintenanceCalendar",
+            "class": "ProblemCalendar",
             "view": "maintenance"
         }
     }
