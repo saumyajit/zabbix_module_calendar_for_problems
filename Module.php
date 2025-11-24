@@ -1,5 +1,5 @@
 <?php
-namespace Modules;
+namespace Modules\problemcal;
 
 use Zabbix;
 use APP;
