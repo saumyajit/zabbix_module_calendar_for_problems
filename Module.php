@@ -1,5 +1,5 @@
 <?php
-namespace Modules\problemcal;
+namespace Modules\eventcal;
 
 use Zabbix\Core\CModule;
 use APP;
