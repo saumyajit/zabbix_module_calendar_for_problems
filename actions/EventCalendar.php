@@ -6,7 +6,7 @@ use CController;
 use CControllerResponseData;
 use API;
 
-class ProblemCalendar extends CController {
+class EventCalendar extends CController {
 
     public function init(): void {
         $this->disableCsrfValidation();
